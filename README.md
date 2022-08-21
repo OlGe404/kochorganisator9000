@@ -1,2 +1,2 @@
-# kochorganisator9000
-Go webapp to organize cooking recipes and generate shopping lists based on ingredients of selected recipes for the week
+# Hello World
+Sample code, commands and Dockerfile to build and run a simple containerized hello world app in Go.
