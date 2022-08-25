@@ -2,12 +2,10 @@ FROM docker.io/library/golang:1.19
 
 WORKDIR /usr/src/app
 
-COPY go.mod ./
+COPY . ./
 
-RUN go mod download && go mod verify
-
-COPY hello_world.go ./
-
-RUN go build -v -o /usr/local/bin/app ./
+RUN go mod download && \
+    go mod verify && \
+    go build -v -o /usr/local/bin/app ./
 
 CMD ["app"]
