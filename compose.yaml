@@ -1,6 +1,7 @@
 ---
 services:
   kochorganisator9000:
+    container_name: kochorganisator9000
     build: .
     ports:
       - "127.0.0.1:8080:8080"
